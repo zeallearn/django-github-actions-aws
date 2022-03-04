@@ -30,7 +30,8 @@ jobs:
   deploy:
     needs: [test]
     runs-on: ubuntu-latest
-
+    environment: 
+      name: Development
     steps:
     - name: Checkout source code
       uses: actions/checkout@v2
